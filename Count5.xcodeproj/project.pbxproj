@@ -12,9 +12,11 @@
 		ABB518CD1F318C1100014E22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABB518CB1F318C1100014E22 /* Main.storyboard */; };
 		ABB518CF1F318C1100014E22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABB518CE1F318C1100014E22 /* Assets.xcassets */; };
 		ABB518D21F318C1100014E22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABB518D01F318C1100014E22 /* LaunchScreen.storyboard */; };
+		FA9FC584E729F3E620DAE67B /* Pods_Count5.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5009735C29812C71045BE3A /* Pods_Count5.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8270A38B0B78CD320ABDC1F3 /* Pods-Count5.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Count5.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Count5/Pods-Count5.debug.xcconfig"; sourceTree = "<group>"; };
 		ABB518C41F318C1100014E22 /* Count5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Count5.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABB518C71F318C1100014E22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABB518C91F318C1100014E22 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		ABB518CE1F318C1100014E22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ABB518D11F318C1100014E22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ABB518D31F318C1100014E22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5009735C29812C71045BE3A /* Pods_Count5.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Count5.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7D55768374D527C66281AA9 /* Pods-Count5.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Count5.release.xcconfig"; path = "Pods/Target Support Files/Pods-Count5/Pods-Count5.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA9FC584E729F3E620DAE67B /* Pods_Count5.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		48AE604834C11F75C9150B6D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C5009735C29812C71045BE3A /* Pods_Count5.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		854D1B3F9B6778FDAB17F7DB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8270A38B0B78CD320ABDC1F3 /* Pods-Count5.debug.xcconfig */,
+				D7D55768374D527C66281AA9 /* Pods-Count5.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		ABB518BB1F318C1100014E22 = {
 			isa = PBXGroup;
 			children = (
 				ABB518C61F318C1100014E22 /* Count5 */,
 				ABB518C51F318C1100014E22 /* Products */,
+				854D1B3F9B6778FDAB17F7DB /* Pods */,
+				48AE604834C11F75C9150B6D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ABB518D61F318C1100014E22 /* Build configuration list for PBXNativeTarget "Count5" */;
 			buildPhases = (
+				8A622214497923943765139C /* [CP] Check Pods Manifest.lock */,
 				ABB518C01F318C1100014E22 /* Sources */,
 				ABB518C11F318C1100014E22 /* Frameworks */,
 				ABB518C21F318C1100014E22 /* Resources */,
+				576ECEAE853736513820396D /* [CP] Embed Pods Frameworks */,
+				66864CD99E14EFEF2F257E59 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		576ECEAE853736513820396D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Count5/Pods-Count5-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		66864CD99E14EFEF2F257E59 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Count5/Pods-Count5-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A622214497923943765139C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		ABB518C01F318C1100014E22 /* Sources */ = {
@@ -258,6 +333,7 @@
 		};
 		ABB518D71F318C1100014E22 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8270A38B0B78CD320ABDC1F3 /* Pods-Count5.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Count5/Info.plist;
@@ -270,6 +346,7 @@
 		};
 		ABB518D81F318C1100014E22 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7D55768374D527C66281AA9 /* Pods-Count5.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Count5/Info.plist;
