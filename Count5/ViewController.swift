@@ -41,6 +41,11 @@ class ViewController: UIViewController {
         number = 0
         numberLabel.text = String(number)
     }
+    
+    @IBAction func sample(){
+        print("sample")
+    }
+    
 }
 
 
