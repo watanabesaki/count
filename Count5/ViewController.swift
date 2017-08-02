@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     
     var number : Int = 0
+    //commnt
     
     @IBOutlet var numberLabel : UILabel!
 
